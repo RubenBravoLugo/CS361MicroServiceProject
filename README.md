@@ -5,7 +5,9 @@ Exampl UML Diagram:
 
 
 ### Requesting  
-Requesting involves calling 
+Requesting involves calling:  response = requests.post(url, json=data)
+data is the jSON 
+URL for the microservice is: https://graciousjadedobjectmodel.rfanova.repl.co/webhook
 # Request Data.py
 ```python
 import requests
