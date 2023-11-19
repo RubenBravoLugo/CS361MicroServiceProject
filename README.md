@@ -6,8 +6,7 @@ Exampl UML Diagram:
 
 # Request Data
 Requesting involves:  
-- response = requests.post(url, json=data).
-- data is the jSON 
+- calling post by: response = requests.post(url, json=data), with the prvided webhook link.
 - URL for the microservice is: https://graciousjadedobjectmodel.rfanova.repl.co/webhook
 
 ```python
