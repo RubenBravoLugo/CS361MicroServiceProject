@@ -6,7 +6,7 @@ Exampl UML Diagram:
 
 
 # Request Data.py
-# 
+
 
 import requests
 import time
@@ -28,7 +28,9 @@ def send_data():
         print("Response from server:", response.text)
     except requests.exceptions.RequestException as e:
         print("Error:", e)
-# Send data
+
+        
+# Reciveing data
 send_data()
 
 
