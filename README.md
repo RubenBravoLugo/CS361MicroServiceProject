@@ -1,2 +1,2 @@
-# CS361Assignment
+# CS361Assignment2
 tesing read me
