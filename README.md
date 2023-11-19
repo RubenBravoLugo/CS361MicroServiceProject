@@ -30,9 +30,9 @@ def send_data():
     # POST request
     try:
         response = requests.post(url, json=data)
-        print("Response from server:", response.text)
+        print("seever response:", response.text)
     except requests.exceptions.RequestException as e:
-        print("Error:", e)
+        print("error:", e)
 ```
 
         
@@ -48,8 +48,8 @@ app = Flask(__name__)
 @app.route('/webhook', methods=['POST'])
 def webhook():
     data = request.get_json()
-    print("Received data:", data)
-    return "Data received!"
+    print(" data:", data)
+    return "recived data"
 
 ```
 
