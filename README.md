@@ -1,7 +1,7 @@
 # CS361MicroServiceProject
 Exampl UML Diagram: 
 
-<img width="479" alt="image" src="https://github.com/RubenBravoLugo/CS361MicroServiceProject/assets/71678992/8325c7c9-b624-41fe-949b-aeb299c849cb">
+<img width="679" alt="image" src="https://github.com/RubenBravoLugo/CS361MicroServiceProject/assets/71678992/8325c7c9-b624-41fe-949b-aeb299c849cb">
 
 
 # Request Data
