@@ -5,13 +5,13 @@ Exampl UML Diagram:
 
 
 ### Requesting  
-Requesting involves calling:  response = requests.post(url, json=data).
-data is the jSON 
-- Ensure that your code is properly indented inside the code blocks for correct formatting.
-- Use inline code formatting for commands, file names, or when referring to code within a paragraph.
-- Use fenced
-URL for the microservice is: https://graciousjadedobjectmodel.rfanova.repl.co/webhook
-# Request Data.py
+Requesting involves calling:  
+- response = requests.post(url, json=data).
+- data is the jSON 
+- URL for the microservice is: https://graciousjadedobjectmodel.rfanova.repl.co/webhook
+# Request Data
+
+
 ```python
 import requests
 import time
