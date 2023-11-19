@@ -4,13 +4,11 @@ Exampl UML Diagram:
 <img width="479" alt="image" src="https://github.com/RubenBravoLugo/CS361MicroServiceProject/assets/71678992/8325c7c9-b624-41fe-949b-aeb299c849cb">
 
 
-### Requesting  
-Requesting involves calling:  
+# Request Data
+Requesting involves:  
 - response = requests.post(url, json=data).
 - data is the jSON 
 - URL for the microservice is: https://graciousjadedobjectmodel.rfanova.repl.co/webhook
-# Request Data
-
 
 ```python
 import requests
