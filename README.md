@@ -6,8 +6,7 @@ Exampl UML Diagram:
 
 
 # Request Data.py
-
-
+```python
 import requests
 import time
 
