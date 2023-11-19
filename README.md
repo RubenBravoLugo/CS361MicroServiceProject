@@ -4,16 +4,19 @@ Exampl UML Diagram:
 <img width="476" alt="image" src="https://github.com/RubenBravoLugo/CS361MicroServiceProject/assets/71678992/ab432d4c-0785-4739-9c84-f70f87f37777">
 
 
-### Adding a Title to Code Blocks
+### Requesting  
+Requesting involves calling 
 # Request Data.py
 ```python
 import requests
 import time
 
 def send_data():
-    # URL of the Flask application
+
+    # URL of Flask application
     url = 'https://graciousjadedobjectmodel.rfanova.repl.co/webhook'
-    # Example data to send
+
+    # Example data 
     data = {
         'material': [
             {'name': 'Material1', 'cost': '100', 'units': '5'},
@@ -21,7 +24,8 @@ def send_data():
             {'name': 'Material2', 'cost': '150', 'units': '3'}
         ]
     }
-    # Making a POST request
+
+    # POST request
     try:
         response = requests.post(url, json=data)
         print("Response from server:", response.text)
@@ -31,7 +35,22 @@ def send_data():
 
         
 # Reciveing data
-send_data()
+
+```python
+# receiver.py
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    data = request.get_json()
+    print("Received data:", data)
+    return "Data received!"
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)  # Adjust the port if necessary
+```
 
 
 Example Recieving Data
