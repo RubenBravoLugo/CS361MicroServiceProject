@@ -37,6 +37,7 @@ def send_data():
 
         
 # Reciveing data
+In order to properly  send back the data i will need a webhook setup and your web app's URL
 
 ```python
 # receiver.py
