@@ -7,7 +7,7 @@ Exampl UML Diagram:
 # Request Data
 Requesting involves:  
 - calling post by: response = requests.post(url, json=data), with the prvided webhook link.
-- URL for the microservice is: https://graciousjadedobjectmodel.rfanova.repl.co/webhook
+- https://graciousjadedobjectmodel.rfanova.repl.co/webhook
 
 ```python
 import requests
@@ -37,7 +37,7 @@ def send_data():
 
         
 # Reciveing data
-In order to properly  send back the data i will need a webhook setup and your web app's URL
+- In order to properly  send back the data i will need a webhook setup like below and your web app's URL
 
 ```python
 # receiver.py
@@ -51,9 +51,6 @@ def webhook():
     print("Received data:", data)
     return "Data received!"
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)  # Adjust the port if necessary
 ```
 
 
-Example Recieving Data
